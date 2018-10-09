@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>jQuery UI Autocomplete - Default functionality</title>
+  
+
+</head>
+<body>
+ 
+
+  <label for="name">name: </label>
+  <input id="name">
+    
+    <label for="places">places: </label>
+  <input id="place">
+
+ 
+</body>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> 
+ 
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> 
+    <script>
+  $( function() {
+    var availablename = ["saikumar","saikiran","sairam","chandan","chintu","suraj","kiran","kiranroy","manish","mani"];
+      
+      $( "#name" ).autocomplete({
+      source: availablename
+    });
+  } );
+  </script>
+    
+    
+    
+    <script>
+  $( function() {
+    var availableplace = ["Hyderabad","Hyderguda","Charminar","chilkur","chintal","chintalkunta",];
+      
+      $( "#place" ).autocomplete({
+      source: availableplace
+    });
+  } );
+  </script>
